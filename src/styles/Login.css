@@ -1,0 +1,44 @@
+.login {
+  height: 100vh;
+  background-color: rgb(70, 68, 68);
+}
+nav {
+  height: 6rem;
+  /* border-bottom: 1px solid red; */
+}
+nav > .MuiSvgIcon-root {
+  position: absolute;
+  top: 2.79rem;
+  left: 5.6rem;
+  z-index: 100;
+  color: white;
+}
+nav > a > button {
+  position: absolute;
+  top: 2rem;
+  left: 5rem;
+  height: 3rem;
+  width: 7rem;
+  font-family: "Roboto";
+  font-size: large;
+  font-weight: 900;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+nav > a > button:hover {
+  background-color: rgb(196, 196, 196);
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  height: 87vh;
+  width: 60%;
+  /* background-color: red; */
+  margin-left: auto;
+  margin-right: auto;
+}

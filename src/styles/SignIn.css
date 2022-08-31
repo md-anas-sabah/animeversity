@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  padding: 20px;
+  font-family: "Roboto";
+}
+
+.sign-in > h2 {
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+.sign-in > p {
+  color: rgb(169, 132, 132);
+  margin-top: -13px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > label {
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  padding: 5px 0 5px 0;
+  margin-top: 10px;
+  font-weight: 100;
+}
+form > input {
+  height: 1rem;
+  padding: 10px;
+  font-size: 15px;
+  border-top: none;
+  font-weight: 100;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: rgb(70, 68, 68);
+  color: white;
+  width: 23rem;
+}
+.form-button {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.signIn-button {
+  height: 3.5rem;
+  width: 11rem;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.google-button {
+  height: 3.5rem;
+  width: 13rem;
+  font-size: 13px;
+  background-color: rgb(66, 133, 244);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}

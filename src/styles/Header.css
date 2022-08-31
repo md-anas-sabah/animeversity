@@ -8,6 +8,7 @@
   align-items: center;
 }
 .header-first {
+  position: absolute;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -102,4 +103,7 @@
   color: white;
   border: none;
   cursor: pointer;
+}
+.header-third > a > button:hover {
+  background-color: green;
 }

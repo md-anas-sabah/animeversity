@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  padding: 20px;
+  font-family: "Roboto";
+}
+.sign-up > h2 {
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+.sign-up > p {
+  color: rgb(169, 132, 132);
+  margin-top: -13px;
+  font-weight: 600;
+}
