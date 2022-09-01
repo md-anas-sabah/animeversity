@@ -12,9 +12,19 @@ function SignUp() {
         <label>Email</label>
         <input type="text" className="inputText" required autoComplete="on" />
         <label>Password</label>
-        <input type="password" className="inputText" required />
+        <input
+          type="password"
+          className="inputText"
+          required
+          autoComplete="on"
+        />
         <label>Confirm Password</label>
-        <input type="password" className="inputText" required />
+        <input
+          type="password"
+          className="inputText"
+          required
+          autoComplete="on"
+        />
         <div className="form-button">
           <button className="signIn-button">sign in</button>
         </div>

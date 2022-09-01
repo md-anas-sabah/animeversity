@@ -41,15 +41,16 @@ function SignIn() {
           required
           autoComplete="on"
           value={email}
-          handleChange={(e) => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <label>Password</label>
         <input
           type="password"
           className="inputText"
           required
+          autoComplete="on"
           value={password}
-          handleChange={(e) => setPassword(e.target.value)}
+          onChange={(e) => setPassword(e.target.value)}
         />
         <div className="form-button">
           <button className="signIn-button" onClick={submitHandler}>
