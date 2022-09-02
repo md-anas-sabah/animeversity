@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 .header {
+  position: sticky;
   display: flex;
   flex-direction: row;
-  height: 7rem;
+  height: 5rem;
   background-color: transparent;
   align-items: center;
+  z-index: 100;
+  /* background-color: rgb(75, 75, 75); */
+  background-color: rgb(32,33,37);
 }
 .header-first {
   position: absolute;
@@ -18,7 +22,8 @@
 .header-first > .MuiSvgIcon-root {
   font-size: 35px;
   /* color: white; */
-  color: black;
+  color: white;
+  cursor: pointer;
 }
 .header-first-logo > a {
   height: auto;
@@ -32,8 +37,9 @@
   width: 3rem;
 }
 .header-first-logo > a > h4 {
-  color: black;
+  color: white;
   font-size: 19px;
+  letter-spacing: 1px;
 }
 .header-first-logo > a > h4 > span {
   font-size: 13px;
@@ -48,6 +54,8 @@
   flex-direction: row;
   width: 24rem;
   align-items: center;
+  border: none;
+  background-color: white;
 }
 .header-first-input > input {
   width: 21rem;
@@ -75,6 +83,7 @@
 }
 .bi-discord {
   margin-right: 5px;
+  margin-left: 5px;
   background-color: rgb(109, 189, 218);
 }
 .bi-telegram {

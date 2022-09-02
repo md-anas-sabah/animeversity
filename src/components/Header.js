@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 
+
 function Header() {
   return (
     <div className="header">
@@ -11,10 +12,7 @@ function Header() {
         <MenuIcon />
         <div className="header-first-logo">
           <Link to="/">
-            <img
-              src="https://i.pinimg.com/564x/24/f4/3b/24f43b71501872e70c17cc0998b3887a.jpg"
-              alt="logo"
-            />
+            <img src="../assets/logo-1.svg" alt="logo" />
             <h4>
               Anime<span>Versity</span>
             </h4>

@@ -1,0 +1,26 @@
+.button > a > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  /* color: white; */
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: black;
+  cursor: pointer;
+  font-family: "Roboto";
+  border-radius: 20px;
+  padding-right: 9px;
+}
+.watch {
+  font-weight: 800;
+  height: 4rem;
+  width: 15rem;
+  background-color: rgb(94, 238, 94);
+}
+.detail {
+  background-color: rgb(74, 75, 81);
+  height: 3rem;
+  width: 10rem;
+}
