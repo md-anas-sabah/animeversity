@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lora:wght@500&family=Russo+One&family=Uncial+Antiqua&display=swap");
+
+.banner {
+  margin-top: 25px;
+  height: 7rem;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(https://wallpaperaccess.com/full/24538.png);
+  background-size: 50rem 7rem;
+}
+.banner > a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  color: white;
+}
+.banner-title {
+  font-size: 30px;
+  margin-left: 4px;
+  font-family: "Uncial Antiqua";
+  color: white;
+}
+
+.banner-desc {
+  display: flex;
+  /* font-weight: 00; */
+  font-size: 20px;
+  font-family: "Lora";
+  letter-spacing: 2px;
+  color: rgb(255, 239, 20);
+}
+.banner-explore {
+  margin-right: 30px;
+  font-family: "Russo One";
+  letter-spacing: 1px;
+  font-size: larger;
+  color: orange;
+}

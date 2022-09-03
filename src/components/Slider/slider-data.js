@@ -11,7 +11,8 @@ export const sliderData = [
     desc: "Gold Roger, the King of the Pirates, attained this and everything else the world had to offer. But 2 decades after his death, a young man named Luffy embarks on a journey across the world to discover it's greatest treasure, the One Piece, and inherit Roger's will - by becoming the King of the Pirates.",
   },
   {
-    image: "https://images3.alphacoders.com/987/thumbbig-987678.webp",
+    // image: "https://images3.alphacoders.com/987/thumbbig-987678.webp",
+    image: "https://wallpaperaccess.com/full/724163.png",
     heading: "Black Clover",
     desc: "The series focuses on Asta, a young orphan who is left to be raised in an orphanage alongside his fellow orphan, Yuno. While everyone is born with the ability to utilize mana in the form of magical power, Asta, with no magic however, instead focuses on physical strength.",
   },

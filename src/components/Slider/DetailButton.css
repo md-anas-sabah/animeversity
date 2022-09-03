@@ -1,0 +1,24 @@
+.detail > a > button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  /* color: white; */
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: black;
+  cursor: pointer;
+  font-family: "Roboto";
+  /* border-radius: 20px; */
+  padding-right: 9px;
+}
+
+.detail {
+  background-color: rgb(74, 75, 81);
+  height: 3rem;
+  width: 10rem;
+  border-radius: 20px;
+  font-weight: 900;
+
+}

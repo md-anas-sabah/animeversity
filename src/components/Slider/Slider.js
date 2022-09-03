@@ -1,17 +1,48 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Slider.css";
 import { sliderData } from "./slider-data";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 // import { Link } from "react-router-dom";
 import Button from "./Button";
+import DetailButton from "./DetailButton";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const slideLength = sliderData.length;
+
+  const nextSlide = () => {
+    setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
+    console.log("next");
+  };
+  const prevSlide = () => {
+    setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
+  };
+
+  useEffect(() => {
+    setCurrentSlide(0);
+  }, []);
+  let slideInterval;
+  let autoScroll = true;
+  let intervalTime = 4000;
+
+  const auto = () => {
+    slideInterval = setInterval(nextSlide, intervalTime);
+  };
+
+  useEffect(() => {
+    if (autoScroll) {
+      auto();
+    }
+
+    return () => clearInterval(slideInterval);
+  }, [currentSlide]);
 
   return (
     <div className="slider">
-      <AiOutlineArrowLeft />
-      <AiOutlineArrowRight />
+      <KeyboardArrowLeftIcon className="arrow prev" onClick={prevSlide} />
+      <KeyboardArrowRightIcon className="arrow next" onClick={nextSlide} />
+
       {sliderData.map((slide, index) => {
         return (
           <div
@@ -24,24 +55,10 @@ function Slider() {
                 <div className="content">
                   <h2>{slide.heading}</h2>
                   <p>{slide.desc}</p>
-                  {/* <Link to="/login-or-signup">
-                    <button className="--btn --btn-primary">
-                      Watch Trailer
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        class="bi bi-play-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
-                      </svg>
-                    </button>
-                  </Link> */}
+
                   <div className="bn">
-                    <Button title="Watch Now" />
-                    <Button title="Detail" />
+                    <Button />
+                    <DetailButton />
                   </div>
                 </div>
               </>

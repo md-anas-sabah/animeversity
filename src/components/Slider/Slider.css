@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
 .slider {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: 90vh;
+  height: 70vh;
   position: relative;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   /* margin-top: -95px; */
 }
 .slide {
@@ -13,28 +18,32 @@
   /* top: 0;
   left: 0; */
   max-width: 100%;
-  height: 100%;
+  height: 80vh;
   opacity: 0;
   transform: translateX(-50%);
-  transition: all 0.5s ease;
-  animation: slide-up 1s ease 0.5s;
-  animation-fill-mode: forwards;
-  /* visibility: none; */
+  transition: all 0s ease-in-out;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+  visibility: none;
 }
-@keyframes slide-up {
-  0% {
-    visibility: visible;
-    top: 23rem;
-  }
+@-webkit-keyframes slide {
   100% {
-    visibility: 100%;
-    top: 17rem;
+    left: 0;
   }
 }
+
+@keyframes slide {
+  100% {
+    left: 0;
+  }
+}
+
 .sliderImg {
   object-fit: fill;
   width: 100vw;
-  height: 80%;
+  height: 100%;
   filter: brightness(50%);
 }
 .current {
@@ -48,13 +57,11 @@
 .content {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   position: absolute;
   top: 15rem;
   left: 5rem;
   color: white;
   max-width: 55%;
-  /* padding: 3rem; */
 }
 
 .content > h2 {
@@ -72,7 +79,6 @@
   flex-direction: row;
   align-items: center;
   gap: 5px;
-
 }
 
 @media screen and (max-width: 600px) {
@@ -82,4 +88,35 @@
   .content {
     width: 80%;
   }
+}
+
+
+.slider > .MuiSvgIcon-root {
+  font-size: 3rem;
+}
+.arrow {
+  border-radius: 20%;
+  background: transparent;
+  color: rgb(65, 62, 62);
+  width: 5rem;
+  height: 7rem;
+  cursor: pointer;
+  top: 35%;
+  right: 2rem;
+  position: absolute;
+  z-index: 999;
+  background: transparent;
+  filter: blur(180%);
+  background-color: rgb(21, 20, 20);
+
+}
+.arrow:hover {
+  background: rgb(76, 231, 76);
+  color: white;
+}
+.next {
+  top: 65%;
+}
+.prev {
+  top: 74%;
 }

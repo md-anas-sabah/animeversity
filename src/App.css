@@ -1,6 +1,7 @@
 .app {
   height: 100vh;
   overflow: auto;
+  background-color: rgb(32, 33, 37);
 }
 a {
   text-decoration: none;

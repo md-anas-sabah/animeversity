@@ -3,8 +3,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
-  /* color: white; */
   font-size: 10px;
   letter-spacing: 1px;
   color: black;
@@ -12,6 +10,7 @@
   font-family: "Roboto";
   border-radius: 20px;
   padding-right: 9px;
+  border: none;
 }
 .watch {
   font-weight: 800;
