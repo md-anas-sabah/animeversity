@@ -1,16 +1,54 @@
+import { useState, useEffect } from "react";
 import React from "react";
 import Banner from "../components/Banner";
 import Header from "../components/Header";
 import Slider from "../components/Slider/Slider";
 import "../styles/Home.css";
+import TopAnime from "../components/TopAnime";
 
 function Home() {
+  const [animeList, setAnimeList] = useState([]);
+  const [topAnime, setTopAnime] = useState([]);
+  const [search, SetSearch] = useState("");
+
+  const GetTopAnime = async () => {
+    const temp = await fetch(
+      `https://api.jikan.moe/v3/top/anime/1/bypopularity`
+    ).then((res) => res.json());
+    setTopAnime(temp.top.slice(0, 12));
+    console.log(topAnime);
+  };
+
+  useEffect(() => {
+    GetTopAnime();
+  }, []);
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    FetchAnime(search);
+    // navigate("/anime-list");
+  };
+
+  const FetchAnime = async (query) => {
+    const temp = await fetch(
+      `https://api.jikan.moe/v3/search/anime?q=${query}&order_by=title&sort=asc&limit=10`
+    ).then((res) => res.json());
+    setAnimeList(temp.results);
+  };
+
   return (
     <div className="home">
-      <Header />
+      <Header
+        HandleSearch={handleSearch}
+        search={search}
+        animeList={animeList}
+        SetSearch={SetSearch}
+      />
+
       <div className="home-container">
         <Slider />
         <Banner />
+        <TopAnime topAnime={topAnime} />
       </div>
     </div>
   );

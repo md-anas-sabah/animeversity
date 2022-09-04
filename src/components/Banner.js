@@ -4,7 +4,7 @@ import "../styles/Banner.css";
 function Banner() {
   return (
     <div className="banner">
-      <a href="https://animeflex.netlify.app">
+      <a href="https://animeflex.netlify.app" target="_blank">
         <div className="banner-title">
           <p>AnimeFlex</p>
         </div>

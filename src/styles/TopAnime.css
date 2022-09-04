@@ -1,0 +1,50 @@
+.topAnime {
+  margin-top: 30px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 17px;
+}
+.topAnime > h1 {
+  font-size: 40px;
+  font-family: "Kanit";
+  color: rgb(79, 212, 79);
+}
+.topAnime-links {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+  width: 100%;
+  overflow-x: scroll;
+  box-sizing: content-box;
+}
+.topAnime-links::-webkit-scrollbar {
+  width: 0 !important;
+}
+.topAnime-links {
+  overflow: -moz-scrollbars-none;
+}
+.topAnime {
+  -ms-overflow-style: none;
+}
+.topAnime-links > a {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.topAnime-links > a > img {
+  height: 15rem;
+  width: 15rem;
+}
+.swipe {
+  margin-top: -25px;
+  font-size: 25px;
+  font-weight: 100;
+  font-family: "Kanit";
+  color: rgb(79, 212, 79);
+  display: flex;
+  justify-content: flex-end;
+}

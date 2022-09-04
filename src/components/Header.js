@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 
-
-function Header() {
+function Header(props) {
   return (
     <div className="header">
       <div className="header-first">
@@ -19,8 +18,16 @@ function Header() {
           </Link>
         </div>
         <div className="header-first-input">
-          <input type="text" placeholder="Search anime..." />
-          <SearchIcon />
+          <form onSubmit={props.HandleSearch}>
+            <input
+              type="text"
+              placeholder="Search anime..."
+              required
+              value={props.search}
+              onChange={(e) => props.SetSearch(e.target.value)}
+            />
+            <SearchIcon />
+          </form>
         </div>
       </div>
       <div className="header-second">

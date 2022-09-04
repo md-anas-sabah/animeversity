@@ -9,7 +9,7 @@
   align-items: center;
   z-index: 100;
   /* background-color: rgb(75, 75, 75); */
-  background-color: rgb(32,33,37);
+  background-color: rgb(32, 33, 37);
 }
 .header-first {
   position: absolute;
@@ -44,7 +44,7 @@
 .header-first-logo > a > h4 > span {
   font-size: 13px;
 }
-.header-first-input {
+.header-first-input > form {
   border: 1px solid black;
   height: 3rem;
   /* padding: 10px; */
@@ -57,9 +57,10 @@
   border: none;
   background-color: white;
 }
-.header-first-input > input {
-  width: 21rem;
-  height: 2rem;
+
+.header-first-input > form > input {
+  /* width: 21rem; */
+  /* height: 2rem; */
   padding: 5 px;
   margin-left: 2px;
   border: none;
@@ -67,8 +68,11 @@
   font-size: 15px;
   color: grey;
   font-family: "Roboto";
+  background-color: white;
 }
-
+form > .MuiSvgIcon-root{
+  margin-right: 10px;
+}
 .header-second {
   position: absolute;
   left: 41.5rem;
