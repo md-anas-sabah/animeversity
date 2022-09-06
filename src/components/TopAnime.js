@@ -13,8 +13,8 @@ function TopAnime({ topAnime }) {
             rel="noreferrer"
             key={anime.mal_id}
           >
-            <img src={anime.image_url} alt="img" />
-            {anime.title}
+            <img src={anime.image_url} alt="img" className="transform" />
+            <p className="green">{anime.title}</p>
           </a>
         ))}
       </div>

@@ -70,7 +70,7 @@
   font-family: "Roboto";
   background-color: white;
 }
-form > .MuiSvgIcon-root{
+form > .MuiSvgIcon-root {
   margin-right: 10px;
 }
 .header-second {
@@ -119,4 +119,21 @@ form > .MuiSvgIcon-root{
 }
 .header-third > a > button:hover {
   background-color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .header-second {
+    display: none;
+  }
+  .header-first-logo 
+  {
+    display: none;
+  }
+  .header-first-input{
+    display: none;
+  }
+  .header-third{
+    position: absolute;
+    right: 8px;
+  }
 }

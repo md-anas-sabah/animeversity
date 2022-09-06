@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Slider from "../components/Slider/Slider";
 import "../styles/Home.css";
 import TopAnime from "../components/TopAnime";
+import Footer from "../components/Footer";
 
 function Home() {
   const [animeList, setAnimeList] = useState([]);
@@ -26,7 +27,6 @@ function Home() {
   const handleSearch = (e) => {
     e.preventDefault();
     FetchAnime(search);
-    // navigate("/anime-list");
   };
 
   const FetchAnime = async (query) => {
@@ -49,6 +49,7 @@ function Home() {
         <Slider />
         <Banner />
         <TopAnime topAnime={topAnime} />
+        <Footer />
       </div>
     </div>
   );

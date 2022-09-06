@@ -7,6 +7,7 @@
   flex-direction: column;
   padding-bottom: 17px;
 }
+
 .topAnime > h1 {
   font-size: 40px;
   font-family: "Kanit";
@@ -21,6 +22,15 @@
   overflow-x: scroll;
   box-sizing: content-box;
 }
+
+.transform {
+  border-radius: 10px;
+}
+.transform:hover {
+  border-radius: 10px;
+  transform: scale(1.05);
+}
+
 .topAnime-links::-webkit-scrollbar {
   width: 0 !important;
 }
@@ -47,4 +57,16 @@
   color: rgb(79, 212, 79);
   display: flex;
   justify-content: flex-end;
+}
+@media screen and (max-width: 600px) {
+  .topAnime > h1 {
+    font-size: 20px;
+  }
+  .topAnime-links > a > img {
+    height: 10rem;
+    width: 10rem;
+  }
+  .swipe {
+    display: none;
+  }
 }

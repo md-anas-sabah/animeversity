@@ -40,3 +40,19 @@
   font-size: larger;
   color: orange;
 }
+
+@media screen and (max-width: 600px) {
+  .banner {
+    width: 30rem;
+  }
+  .banner-title {
+    margin-left: 13px;
+    font-size: 15px;
+  }
+  .banner-desc {
+    font-size: 12px;
+  }
+  .banner-explore {
+    font-size: 12px;
+  }
+}

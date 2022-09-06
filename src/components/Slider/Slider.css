@@ -81,16 +81,6 @@
   gap: 5px;
 }
 
-@media screen and (max-width: 600px) {
-  .slide img {
-    width: 100%;
-  }
-  .content {
-    width: 80%;
-  }
-}
-
-
 .slider > .MuiSvgIcon-root {
   font-size: 3rem;
 }
@@ -108,7 +98,6 @@
   background: transparent;
   filter: blur(180%);
   background-color: rgb(21, 20, 20);
-
 }
 .arrow:hover {
   background: rgb(76, 231, 76);
@@ -119,4 +108,36 @@
 }
 .prev {
   top: 74%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider {
+    width: 100%;
+    height: 43vh;
+  }
+  .slide img {
+    object-fit: fill;
+    width: 100%;
+  }
+  .content {
+    position: absolute;
+    top: 9rem;
+    left: 4px;
+    width: 100%;
+  }
+  .content > h2 {
+    font-size: 22px;
+  }
+  .content > p {
+    font-size: 12px;
+  }
+  .slider > .MuiSvgIcon-root {
+    font-size: 2rem;
+  }
+  .next {
+    top: 70%;
+  }
+  .prev {
+    top: 80%;
+  }
 }
