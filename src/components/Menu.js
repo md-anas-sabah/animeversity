@@ -1,37 +1,13 @@
-import React, { useState } from "react";
-import "../styles/Header.css";
+import React from "react";
+import "../styles/Menu.css";
 import { Link } from "react-router-dom";
-import MenuIcon from "@mui/icons-material/Menu";
-// import SearchIcon from "@mui/icons-material/Search";
-import Menu from "./Menu";
+import SearchIcon from "@mui/icons-material/Search";
 
-function Header(props) {
-  const [showMenu, setShowMenu] = useState(false);
-  let menu;
-  if (showMenu) {
-    menu = (
-      <div>
-        {" "}
-        <Menu />{" "}
-      </div>
-    );
-  }
-
+function Menu(props) {
   return (
-    <div className="header">
-      <div className="header-first">
-        <button
-          onClick={() => {
-            setShowMenu(!showMenu);
-            console.log("clicked");
-          }}
-        >
-          <MenuIcon />
-        </button>
-        {menu}
-      </div>
-
-      {/* <div className="header-first-logo">
+    <div className="menu">
+      <div className="menu-first">
+        <div className="menu-first-logo">
           <Link to="/">
             <img src="../assets/logo-1.svg" alt="logo" />
             <h4>
@@ -39,7 +15,7 @@ function Header(props) {
             </h4>
           </Link>
         </div>
-        <div className="header-first-input">
+        <div className="menu-first-input">
           <form onSubmit={props.HandleSearch}>
             <input
               type="text"
@@ -52,7 +28,7 @@ function Header(props) {
           </form>
         </div>
       </div>
-      <div className="header-second">
+      <div className="menu-second">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="25"
@@ -98,14 +74,9 @@ function Header(props) {
         >
           <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
         </svg>
-      </div> */}
-      <div className="header-third">
-        <Link to="/login-or-signup">
-          <button>LOGIN</button>
-        </Link>
       </div>
     </div>
   );
 }
 
-export default Header;
+export default Menu;
