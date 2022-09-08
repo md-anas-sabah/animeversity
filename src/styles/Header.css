@@ -140,11 +140,14 @@ form > .MuiSvgIcon-root {
 }
 
 @media screen and (max-width: 600px) {
+  .header {
+    position: fixed;
+  }
   .header-second {
     display: none;
   }
   .header-third {
-    position: absolute;
+    position: fixed;
     right: 8px;
   }
 }
