@@ -6,6 +6,8 @@ import Slider from "../components/Slider/Slider";
 import "../styles/Home.css";
 import TopAnime from "../components/TopAnime";
 import Footer from "../components/Footer";
+import VideoCard from "../components/VideoCard";
+import { videos } from "./VideoPage/VideoPage-data";
 
 function Home() {
   const [animeList, setAnimeList] = useState([]);
@@ -49,6 +51,13 @@ function Home() {
         <Slider />
         <Banner />
         <TopAnime topAnime={topAnime} />
+        {videos.map((video) => (
+          <VideoCard
+            key={video._id}
+            title={video.title}
+            creatorImg={video.creatorImg}
+          />
+        ))}
         <Footer />
       </div>
     </div>

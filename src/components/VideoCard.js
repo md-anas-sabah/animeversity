@@ -1,6 +1,6 @@
 import React from "react";
-import { BsFillPlayFill } from "react-icons/ai";
-
+import { BsFillPlayFill } from "react-icons/bs";
+import "../styles/VideoCard.css";
 function VideoCard({
   _id,
   title,
@@ -17,7 +17,18 @@ function VideoCard({
         alt="thumbnail"
       />
       <BsFillPlayFill className="play-icon" />
-      <div className="videoCard-details"></div>
+      <div className="videoCard-details">
+        <img src={creatorImg} alt="logo" className="creator-img" />
+        <div className="details-container">
+          <span className="title">{title}</span>
+          <div>
+            <span>
+              {creator}-{views} views
+            </span>
+            <span>{createdAt}</span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
