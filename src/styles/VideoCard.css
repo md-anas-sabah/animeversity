@@ -6,7 +6,9 @@
   padding: 1rem;
   position: relative;
   transition: all 0.2ms ease-in-out;
+  color: white;
 }
+
 .video-card:hover {
   cursor: pointer;
   transform: scale(1.05);
@@ -27,8 +29,9 @@
   transform: translateX(-50%);
 }
 
-.video-card-details {
+.videoCard-details {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   color: var(--gray-50);

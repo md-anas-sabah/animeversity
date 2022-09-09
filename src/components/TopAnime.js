@@ -18,9 +18,7 @@ function TopAnime({ topAnime }) {
           </a>
         ))}
       </div>
-      <div className="swipe">
-        <p>Swipe→</p>
-      </div>
+    
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import { BsFillPlayFill } from "react-icons/bs";
 import "../styles/VideoCard.css";
+import { useNavigate } from "react-router-dom";
 function VideoCard({
   _id,
   title,
@@ -10,10 +11,17 @@ function VideoCard({
   creator,
   creatorImg,
 }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/video/${_id}`);
+  };
+
   return (
-    <div className="video-card">
+    <div className="video-card" onClick={handleClick}>
       <img
-        src={`https://i.ytimg.com/vi/&{_id}/maxresdefault.jpg`}
+        // src={`https://i.ytimg.com/vi/${_id}/maxresdefault.jpg`}
+        src={`https://i.ytimg.com/vi/${_id}/maxresdefault.jpg`}
         alt="thumbnail"
       />
       <BsFillPlayFill className="play-icon" />

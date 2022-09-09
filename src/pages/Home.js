@@ -51,13 +51,20 @@ function Home() {
         <Slider />
         <Banner />
         <TopAnime topAnime={topAnime} />
-        {videos.map((video) => (
-          <VideoCard
-            key={video._id}
-            title={video.title}
-            creatorImg={video.creatorImg}
-          />
-        ))}
+        <h1 className="amv-h1">Watch Anime Trailer/AMV Online</h1>
+        <div className="amv">
+          {videos.map((video) => (
+            <VideoCard
+              key={video._id}
+              _id={video._id}
+              title={video.title}
+              creatorImg={video.creatorImg}
+              createdAt={video.createdAt}
+              views={video.views}
+              likes={video.likes}
+            />
+          ))}
+        </div>
         <Footer />
       </div>
     </div>

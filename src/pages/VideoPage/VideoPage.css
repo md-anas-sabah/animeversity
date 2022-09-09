@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.videoPage {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(34, 34, 52);
+  height: 100vh;
+}
+.video-container {
+  margin: 70px auto 0 auto;
+}
+.video-container-footer {
+  display: flex;
+  flex-direction: column;
+}
+.video-title {
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans" sans-serif;
+}
+.video-details {
+  position: relative;
+  top: -12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgb(163, 163, 163);
+  border-bottom: 1px solid grey;
+  gap: 20px;
+}
+
+.video-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.creator-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.creator {
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: white;
+  font-weight: 900;
+}
+.subscriber {
+  color: rgb(163, 163, 163);
+}
+.subs {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .videoPage {
+    height: 100vh;
+  }
+  .video-container {
+    margin: 20px auto 0 auto;
+  }
+  .video-title {
+    font-size: 20px;
+  }
+  .video-details {
+    position: relative;
+    top: -12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
+    color: rgb(163, 163, 163);
+    border-bottom: 1px solid grey;
+  }
+  .video-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+  .creator-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .creator {
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: white;
+    font-weight: 900;
+  }
+  .subscriber {
+    color: rgb(163, 163, 163);
+  }
+  .subs {
+    display: flex;
+    flex-direction: column;
+  }
+}
