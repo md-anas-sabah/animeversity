@@ -41,18 +41,21 @@
   color: orange;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .banner {
-    width: 30rem;
+    width: 26rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .banner-title {
-    margin-left: 13px;
-    font-size: 15px;
+    margin-left: 20px;
+    font-size: 10px;
   }
   .banner-desc {
-    font-size: 12px;
+    font-size: 8px;
   }
   .banner-explore {
-    font-size: 12px;
+    font-size: 10px;
   }
 }

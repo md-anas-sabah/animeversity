@@ -25,8 +25,8 @@ const VideoPage = () => {
         <ReactPlayer
           url={`https://www.youtube.com/watch?v=${video._id}`}
           loop="true"
-          width="80vw"
-          height="70vh"
+          width="100vw"
+          height="60vh"
           border-radius="20px"
           controls="true"
         />

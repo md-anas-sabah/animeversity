@@ -61,13 +61,14 @@
   justify-content: flex-end;
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .topAnime > h1 {
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 50px;
   }
   .topAnime-links > a > img {
-    height: 10rem;
-    width: 10rem;
+    height: 8rem;
+    width: 8rem;
   }
   .swipe {
     display: none;

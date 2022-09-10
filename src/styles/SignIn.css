@@ -2,9 +2,9 @@
 .sign-in {
   display: flex;
   flex-direction: column;
-  flex: 50%;
   padding: 20px;
   font-family: "Roboto";
+  border-bottom: 1px solid white;
 }
 
 .sign-in > h2 {
@@ -70,4 +70,10 @@ form > input {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .sign-in > h2 {
+    font-size: 21px;
+  }
 }

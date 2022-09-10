@@ -22,9 +22,10 @@
   margin-top: 55px;
 }
 
-@media screen and (max-width: 600px) {
-    .amv-h1{
-      margin-left: auto;
-      margin-right: auto;
-    }
+@media screen and (max-width: 480px) {
+  .amv-h1 {
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: auto;
+  }
 }

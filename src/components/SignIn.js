@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/SignIn.css";
 import { auth, signInWithGoogle } from "../firebase/firebaseUtils";
+
 // import { UserAuth } from "../context/AuthContext";
 
 function SignIn() {
@@ -13,6 +14,7 @@ function SignIn() {
   //       console.log(error);
   //     }
   //   };
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
