@@ -16,6 +16,7 @@
   color: white;
   font-size: 20px;
   font-family: "Open Sans" sans-serif;
+  margin-left: 20px;
 }
 .video-details {
   position: relative;
@@ -28,6 +29,8 @@
   color: rgb(163, 163, 163);
   border-bottom: 1px solid grey;
   gap: 20px;
+  margin-left: 20px;
+  margin-right: 40px;
 }
 
 .video-actions {
@@ -37,6 +40,7 @@
   color: white;
   cursor: pointer;
   font-size: 17px;
+  margin-right: 40px;
 }
 .flex {
   display: flex;
@@ -48,6 +52,7 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  margin-left: 20px;
 }
 .creator {
   font-size: 16px;

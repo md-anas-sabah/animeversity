@@ -1,5 +1,42 @@
 export const videos = [
   {
+    _id: "l4yVf28RfO4",
+    title: "Luffy vs Kaido [ AMV ] MIDDLE OF THE NIGHT",
+    createdAt: "5 May 2022",
+    views: "5,211,138",
+    likes: "73kk",
+    creator: "More Than AMV",
+    creatorImg:
+      "https://yt3.ggpht.com/V8JshcYR6rs7PjP42gFG9B80_Gke2_LOomIZU1pL5autDE3KsjtTm0txXfEcWJQJAc5gSjoJ4A=s88-c-k-c0x00ffffff-no-rj",
+    category: "AMV",
+    subscriber: "6.53k",
+  },
+  {
+    _id: "5GYRBa_SQ_M",
+    title: "Vipper's Open Collab - True Colors [Edit/AMV] 6k Special",
+    createdAt: "11 Sept 2022",
+    views: "273",
+    likes: "10",
+    creator: "More Than AMV",
+    creatorImg:
+      "https://yt3.ggpht.com/V8JshcYR6rs7PjP42gFG9B80_Gke2_LOomIZU1pL5autDE3KsjtTm0txXfEcWJQJAc5gSjoJ4A=s88-c-k-c0x00ffffff-no-rj",
+    category: "AMV",
+    subscriber: "6.53k",
+  },
+  {
+    _id: "_A13cw9212M",
+    title:
+      "Naruto’s Birth and The Sad Death of His Parents | Minato vs Tobi | Nine Tails Attack [English Dub]",
+    createdAt: "12 May 2022",
+    views: "168k",
+    likes: "23k",
+    creator: "Crave Uzumaki",
+    creatorImg:
+      "https://yt3.ggpht.com/tR5W5tfavmVboj9N0wNVI0jfVPF0JCk_0kTkfFwt4nvTD9wxfz55lxiLbIo9u3F62qWmmbJ4MjQ=s176-c-k-c0x00ffffff-no-rj",
+    category: "AMV",
+    subscriber: "47.2k",
+  },
+  {
     _id: "ejWo1KHRYTI",
     title: "Naruto 「AMV」- Legends Never Die | HD",
     createdAt: "9 Dec 2017",

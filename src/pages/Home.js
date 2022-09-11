@@ -52,6 +52,7 @@ function Home() {
         <Banner />
         <TopAnime topAnime={topAnime} />
         <h1 className="amv-h1">Watch Anime Trailer/AMV Online</h1>
+
         <div className="amv">
           {videos.map((video) => (
             <VideoCard
@@ -65,6 +66,7 @@ function Home() {
             />
           ))}
         </div>
+
         <Footer />
       </div>
     </div>
